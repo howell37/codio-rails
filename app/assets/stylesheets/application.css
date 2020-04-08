@@ -1,0 +1,309 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+/* #intro {
+  color: #ffffff;
+  text-shadow: (0 0 0.75rem aquamarine);
+
+  position: absolute;
+}
+#social {
+  animation: orbit 15s linear infinite;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+/* 
+.custom-button.btn:hover {
+  color: #fff !important;
+  border: none;
+}
+.hero {
+  width: 100vw;
+  height: 50vh;
+}
+.hero img {
+  object-fit: cover;
+  object-position: top;
+  height: 100%;
+  width: 100%;
+}
+.overlay {
+  height: 100%;
+  width: 100%;
+  opacity: 0.4;
+}
+#homepageDiv {
+  background-image: url("https://image.freepik.com/free-photo/abstract-background-with-planets-space_23-2148235955.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#homepageMainDiv {
+  display: flex;
+  flex-direction: row;
+}
+#githubImg {
+  filter: drop-shadow(0 0 0.75rem aquamarine);
+  height: 90px;
+  width: 90px;
+  animation: rotation linear;
+  margin-left: 30px;
+  margin-top: 5px;
+  animation: orbit 10s linear infinite;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+#linkedInImg {
+  filter: drop-shadow(0 0 0.75rem aquamarine);
+  height: 90px;
+  width: 90px;
+  animation: rotation linear;
+  margin-left: 30px;
+  margin-top: 5px;
+  animation: orbit 5s linear infinite;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+#nav {
+  background-color: teal;
+
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+@keyframes floating {
+  from {
+    transform: translate(0, 0px);
+    opacity: 0;
+  }
+  35% {
+    transform: translate(0, 5px);
+    opacity: 0.2;
+  }
+  65% {
+    transform: translate(0, 15px);
+    opacity: 0.5;
+  }
+  to {
+    transform: translate(0, -0px);
+    opacity: 1;
+  }
+}
+
+@keyframes background {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes invert {
+  0% {
+    transform: rotateX(-90deg) rotateY(360deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg);
+  }
+}
+@keyframes orbit {
+  from {
+    transform: rotateY(0) translateZ(100px);
+    animation-timing-function: linear;
+  }
+
+  to {
+    transform: rotateY(360deg) translateZ(100px);
+    animation-timing-function: linear;
+  }
+}  */
+* {
+  margin: 0;
+  padding: 0;
+}
+#nav {
+  margin: 0;
+  padding: 0;
+  border-top-right-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+  background-color: rgb(211, 172, 45) !important;
+
+  box-shadow: 0 0 60px 30px #fbe602, 0 0 100px 60px #e70f14,
+    0 0 140px 90px #fabc14;
+}
+#name {
+  text-shadow: (0 0 0.75rem aquamarine);
+}
+
+#homepageMainDiv {
+  display: flex;
+  flex-direction: row;
+}
+#githubImg {
+  filter: drop-shadow(0 0 0.75rem aquamarine);
+  height: 90px;
+  width: 90px;
+  animation: rotation linear;
+  margin-left: 30px;
+  margin-top: 5px;
+  animation: orbit 10s 1s linear infinite;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+#linkedInImg {
+  filter: drop-shadow(0 0 0.75rem aquamarine);
+  height: 90px;
+  width: 90px;
+  animation: rotation linear;
+  margin-left: 30px;
+  margin-top: 5px;
+  animation: orbit 9s linear infinite;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+@keyframes orbit {
+  from {
+    transform: rotateY(0) translateZ(100px);
+    animation-timing-function: linear;
+  }
+
+  to {
+    transform: rotateY(360deg) translateZ(100px);
+    animation-timing-function: linear;
+  }
+}
+@keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+@-webkit-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+@-moz-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+@-ms-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+@-webkit-keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+@-moz-keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+@-ms-keyframes move-clouds-back {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+
+.stars,
+.twinkling,
+.clouds {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.stars {
+  background: #000
+    url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top
+    center;
+  z-index: 0;
+}
+
+.twinkling {
+  background: transparent
+    url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat
+    top center;
+  z-index: 1;
+
+  -moz-animation: move-twink-back 200s linear infinite;
+  -ms-animation: move-twink-back 200s linear infinite;
+  -o-animation: move-twink-back 200s linear infinite;
+  -webkit-animation: move-twink-back 200s linear infinite;
+  animation: move-twink-back 200s linear infinite;
+}
+
+.clouds {
+  background: transparent
+    url(http://www.script-tutorials.com/demos/360/images/clouds3.png) repeat top
+    center;
+  z-index: 3;
+
+  -moz-animation: move-clouds-back 200s linear infinite;
+  -ms-animation: move-clouds-back 200s linear infinite;
+  -o-animation: move-clouds-back 200s linear infinite;
+  -webkit-animation: move-clouds-back 200s linear infinite;
+  animation: move-clouds-back 200s linear infinite;
+}
